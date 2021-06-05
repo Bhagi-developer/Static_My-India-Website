@@ -1,0 +1,269 @@
+/* css for all content */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 2s;
+    scroll-behavior: smooth;
+}
+
+/* css for header */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),  url('/IMGS/ladakh/Ladakh\ heading\ img.jpg');
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* css for nav */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.37);
+    color: white;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+}
+
+nav .logo {
+    width: 20%;
+    display: flex;
+    text-align: center;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .logo img {
+    height: 70px;
+}
+
+nav .logo .animate__animated.animate__bounce {
+    --animate-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+nav .menu {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Pacifico', cursive;
+}
+nav .menu a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .menu a:hover{
+    text-decoration: underline;
+}
+nav .menu a:active {
+    color: #a0afaa;
+}
+
+/* css for header section */
+
+header .main_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+.main_header h1 {
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.main_header h3 {
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    font-family: 'Patrick Hand', cursive;
+    word-spacing: 10px;
+}
+
+.main_header h3 span::after {
+    content: "";
+    animation: Textchange 10s infinite linear;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+@keyframes Textchange {
+    0% {
+        content: "Zanskar Valley – The Desolate Himalayan Place";
+    }
+    20% {
+        content: "Nubra Valley";
+    }
+    40% {
+        content: "Spituk Gompa";
+    }
+    60% {
+        content: "Hemis National Park";
+    }
+    80% {
+        content: "Hemis Monastery";
+    }
+    100% {
+        content: "Royal Leh Palace";
+    }
+}
+
+.main_header p {
+    text-transform: capitalize;
+    font-family: 'Pacifico', cursive;
+}
+
+.main_header div {
+    width: 40%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.main_header button {
+    width: 35%;
+    height: 30px;
+    background-color: #5b5b5b;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Courgette', cursive;
+}
+
+.main_header button:hover {
+    background-color: rgba(85, 82, 82, 0.664);
+}
+
+/* css for places section */
+
+section .places_outerdiv {
+    margin: 30px 0;
+    padding: 30px;
+}
+.outer_h1{
+    background-color: coral;
+    display: block;
+    width: 30%;
+    margin: 20px auto 0;
+    border-radius: 10px;
+}
+
+.places_innerdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.places_innerdiv div {
+    width: 29%;
+    background-color: #d4c1b0;
+    display: inline-block;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 20px;
+    width: 40%;
+}
+
+.places_innerdiv div:hover {
+    transform: scale(1.02);
+    box-shadow: 6px 6px 10px grey;
+    background-color: #f8e7d9;
+}
+
+.places h1 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+    font-family: 'Patrick Hand', cursive;
+    
+}
+
+
+.places_innerdiv img {
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.places p {
+    color: #000;
+    font-family: 'Itim', cursive;
+}
+
+.places .link {
+    margin-top: 20px;
+}
+
+/* css for contact section */
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact button {
+    background-color: #1fd497;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin: 20px 0;
+}
+#contact h3{
+    font-family: 'Pacifico', cursive;
+    color: black;
+}
+#contact h2{
+    font-family: 'Pacifico', cursive;
+    color: black;
+}
+#contact button a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#contact div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+#contact div img {
+    height: 100px;
+    margin: 5px 32px;
+}
+
+footer{
+    color: #000;
+    text-align: center;
+    background-color: rgb(110, 126, 126);
+}
+
+footer a{
+    color: white;
+}
+

@@ -1,0 +1,75 @@
+@media only screen and (max-width:1340px) {
+   section .states_outerdiv{
+       padding: 0;
+       margin: 0;
+   }
+   .states_innerdiv div{
+       height: 500px;
+   }
+}
+
+@media only screen and (max-width:1000px) {
+    header {
+        background: url('/IMGS/agra/taj\ mahal2.jpg') repeat-y;
+        background-size: contain;
+    }
+    nav {
+        height: 200px;
+        background: rgba(0, 0, 0);
+    }
+    nav .menu {
+        width: 100%;
+        margin-top: 20px
+    }
+    nav .menu a {
+        margin: 10px 10px;
+    }
+    nav .logo {
+        width: 50%;
+        margin: auto;
+    }
+    nav .logo img {
+        background-color: #fff;
+    }
+    .main_header h1 {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto 40px;
+    }
+    .main_header h3 {
+        text-align: center;
+    }
+    .main_header .Button_div {
+        width: 80%;
+    }
+    .main_header .Button_div button {
+        width: 40%;
+    }
+    .states_innerdiv{
+        padding: 40px;
+    }
+    .states_innerdiv div{
+        width: 80%;
+        height: 650px;
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .states_innerdiv {
+        padding: 0;
+    }
+    .states_innerdiv div{
+        width: 100%;
+        margin: 10px 0;
+        height: 750px;
+        font-size: medium;
+    }
+    .other_pages h2{
+        text-align: center;
+    }
+    .other_pages div{
+width: 80%;
+    }
+
+}
